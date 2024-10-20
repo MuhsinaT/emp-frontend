@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import img1 from '../assets/img1.png';
 import { Link } from 'react-router-dom';
 
