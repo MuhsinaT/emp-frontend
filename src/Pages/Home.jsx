@@ -23,6 +23,7 @@ function Home() {
       const res = await getemployeeApi();
       if (res.status === 200) {
         setEmployees(res.data);
+        getData()
       }
     } catch (error) {
       console.error('Error fetching employees:', error);
@@ -56,11 +57,11 @@ function Home() {
       const res = await UpdateEmployeeApi(editEmp, editEmp.id);
       if (res.status === 200) {
         toast.success("Update successful!!");
-        handleClose(); // Close modal after successful update
+        handleClose(); 
         setEditEmp({
           id: "", firstname: "", lastname: "", age: "", qualification: "", email: ""
         });
-        getData(); // Refresh employee list after update
+        getData()
       } else {
         toast.error("Update failed!!");
       }
@@ -72,7 +73,7 @@ function Home() {
   return (
     <div className="container mt-5">
       <h2 className='text-center'>Employee List</h2>
-      <Add /> {/* Component to add a new employee */}
+      <Add /> 
       <div className="container-fluid p-5 row">
   {employees.length > 0 ? (
     employees.map((item, index) => (

@@ -3,7 +3,7 @@ import './App.css'
 import { Routes,Route } from 'react-router-dom'
 import Landing from './Pages/Landing'
 import Home from './Pages/Home'
-import Add from './components/Add'
+import Add from './Components/Add'
 import 'react-toastify/dist/ReactToastify.css';
 import {  ToastContainer } from 'react-toastify';
 
