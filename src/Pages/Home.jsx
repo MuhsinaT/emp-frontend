@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import Add from '../components/Add';
+import Add from '../Components/Add';
 import { getemployeeApi, deleteEmployeeApi, UpdateEmployeeApi } from '../Services/Allapi';
 import { toast } from 'react-toastify';
 import Modal from 'react-bootstrap/Modal';
